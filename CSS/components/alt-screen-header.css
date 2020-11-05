@@ -11,11 +11,25 @@
   font-weight: 600;
 }
 
+.alt-header__column {
+  width: 33%;
+}
+
 /* 정중앙을 맞추기 위해 첫번째와 마지막 자식에 마진을 오토로  줌  */
 .alt-header__column:first-child {
   margin-right: auto;
 }
 
+.alt-header__column:nth-child(2) {
+  text-align: center;
+}
+
 .alt-header__column:last-child {
   margin-left: auto;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.alt-header__column span:last-child {
+  margin-left: 20px;
 }
