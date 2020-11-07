@@ -28,3 +28,30 @@
   justify-content: space-between;
   color: rgba(0, 0, 0, 0.5);
 }
+
+/*애니메이션을 넣는 방법*/
+@keyframes hidsSplashScreen {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+#splach-screen {
+  background-color: var(--yellow);
+  position: absolute;
+  /*vh, vw는 각각 높이 100% 넓이 100%라는 의미이다.*/
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 122px;
+  animation: hidsSplashScreen 1s ease-in-out forwards;
+  /*애니매이션이 작동하기까지의 시간을 기다리는 명령어*/
+  animation-delay: 2s;
+}
